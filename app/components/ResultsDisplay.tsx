@@ -17,9 +17,9 @@ const ResultsDisplay = () => {
     setTimeout(() => {
       try {
         const data: Result[] = [
-          { id: 1, title: 'Result 1', description: 'Description for result 1' },
-          { id: 2, title: 'Result 2', description: 'Description for result 2' },
-          { id: 3, title: 'Result 3', description: 'Description for result 3' },
+          { id: 1, title: 'Classification Result', description: 'Image classified under Category A.' },
+          { id: 2, title: 'Object Detection', description: 'Detected an object in the image.' },
+          { id: 3, title: 'Segmentation', description: 'Foreground and background separated.' },
         ];
         setResults(data);
       } catch (err) {
@@ -32,9 +32,8 @@ const ResultsDisplay = () => {
 
   return (
     <div className="mt-8 p-6 bg-gray-800 rounded-lg shadow-lg">
-      <h2 className="text-2xl font-bold mb-4">Results</h2>
       {loading ? (
-        <p className="text-gray-400">Loading...</p>
+        <p className="text-gray-400">Loading results...</p>
       ) : error ? (
         <p className="text-red-500">{error}</p>
       ) : results && results.length > 0 ? (
