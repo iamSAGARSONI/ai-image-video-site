@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  background: linear-gradient(135deg, #bdbdc6, #2d2d44);
+/* Custom hero background shape */
+.hero-bg {
+  /* Purple to Indigo diagonal gradient */
+  background: linear-gradient(135deg, #6B21A8, #4338CA);
+  /* Angled shape: top straight, bottom diagonal */
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }

@@ -1,12 +1,13 @@
+import './styles/globals.css';
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './styles/globals.css';
+import Navbar from 'app/components/Navbar';
 
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'AI Image & Video Processing',
-  description: 'Advanced AI-powered image and video processing using PyTorch transformers.',
+  description: 'AI Image & Video Video Processing site',
 };
 
 export default function RootLayout({
@@ -16,10 +17,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </head>
-      <body className={`${inter.className} bg-gradient-to-r from-purple-900 to-indigo-900 text-white`}>
+      <body className={`${inter.className} bg-gray-900 text-white`}>
+        {/* Navbar displayed on every page */}
+        <Navbar />
         {children}
       </body>
     </html>

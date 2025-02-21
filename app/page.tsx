@@ -1,29 +1,29 @@
-import ResultsDisplay from './components/ResultsDisplay';
-import Dashboard from './components/Dashboard';
-import Navbar from './components/Navbar';
+import Hero from './components/hero';
+import Features from './components/features';
+import Results from './components/results';
+
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <main className="container mx-auto p-4">
-        <header className="text-center mb-8">
-          <h1 className="text-4xl font-bold">AI Image & Video Processing</h1>
-          <p className="mt-4 text-lg">
-            Explore our core features designed to enhance your media processing experience.
-          </p>
-        </header>
+    <main>
+      {/* Hero Section */}
+      <Hero />
 
-        <section className="mb-8">
-          <h2 className="text-3xl font-bold mb-4">Core Features</h2>
-          <Dashboard />
-        </section>
+      {/* Features Section */}
+      <section className="container mx-auto py-12 px-4">
+        <h2 className="text-3xl font-bold text-center mb-8 uppercase tracking-wider">
+          Core Features
+        </h2>
+        <Features />
+      </section>
 
-        <section>
-          <h2 className="text-3xl font-bold mb-4">Results</h2>
-          <ResultsDisplay />
-        </section>
-      </main>
-    </div>
+      {/* Results Section */}
+      <section className="container mx-auto py-12 px-4">
+        <h2 className="text-3xl font-bold text-center mb-8 uppercase tracking-wider">
+          Latest Results
+        </h2>
+        <Results />
+      </section>
+    </main>
   );
 }
