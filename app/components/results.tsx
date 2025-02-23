@@ -59,7 +59,7 @@ export default function Results() {
         results.map((result) => (
           <div
             key={result.id}
-            className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            className="feature-block bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
           >
             <h3 className="text-xl font-semibold mb-2">{result.title}</h3>
             <p className="text-gray-300">{result.description}</p>

@@ -9,3 +9,105 @@
   /* Angled shape: top straight, bottom diagonal */
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
+
+@keyframes border-glow {
+  0% {
+    border-color: #6B21A8;
+    box-shadow: 0 0 10px #6B21A8;
+  }
+  50% {
+    border-color: #4338CA;
+    box-shadow: 0 0 20px #4338CA;
+  }
+  100% {
+    border-color: #6B21A8;
+    box-shadow: 0 0 10px #6B21A8;
+  }
+}
+
+.feature-block {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-block:hover {
+  animation: border-glow 2s infinite;
+}
+
+.feature-block {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #1F2937; /* Match your background color */
+}
+
+.feature-block::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #6B21A8, #4338CA);
+  border-radius: 0.5rem;
+  z-index: -1;
+  animation: border-glow 2s infinite;
+}
+
+.feature-block:hover::before {
+  animation: border-glow 2s infinite;
+}
+
+@keyframes border-glow {
+  0% {
+    border-color: #6B21A8;
+    box-shadow: 0 0 10px #6B21A8;
+  }
+  50% {
+    border-color: #4338CA;
+    box-shadow: 0 0 20px #4338CA;
+  }
+  100% {
+    border-color: #6B21A8;
+    box-shadow: 0 0 10px #6B21A8;
+  }
+}
+
+.feature-block {
+  position: relative;
+  border: 2px solid transparent;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-block:hover {
+  animation: border-glow 2s infinite;
+}
+
+.feature-block {
+  position: relative;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  background: #1F2937; /* Match your background color */
+}
+
+.feature-block::before {
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(135deg, #6B21A8, #4338CA);
+  border-radius: 0.5rem;
+  z-index: -1;
+  animation: border-glow 2s infinite;
+}
+
+.feature-block:hover::before {
+  animation: border-glow 2s infinite;
+}
