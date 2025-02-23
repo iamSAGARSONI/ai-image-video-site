@@ -13,7 +13,6 @@ const ResultsDisplay = () => {
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    // Simulate fetching results from a backend API
     setTimeout(() => {
       try {
         const data: Result[] = [

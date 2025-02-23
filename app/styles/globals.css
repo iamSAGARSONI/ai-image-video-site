@@ -4,9 +4,9 @@
 
 /* Custom hero background shape */
 .hero-bg {
-  /* Purple to Indigo diagonal gradient */
+
   background: linear-gradient(135deg, #6B21A8, #4338CA);
-  /* Angled shape: top straight, bottom diagonal */
+
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
 
@@ -41,7 +41,7 @@
   position: relative;
   border-radius: 0.5rem;
   overflow: hidden;
-  background: #1F2937; /* Match your background color */
+  background: #1F2937; 
 }
 
 .feature-block::before {
@@ -92,7 +92,7 @@
   position: relative;
   border-radius: 0.5rem;
   overflow: hidden;
-  background: #1F2937; /* Match your background color */
+  background: #1F2937; 
 }
 
 .feature-block::before {
